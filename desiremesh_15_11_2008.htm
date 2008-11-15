@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title> &raquo; MerbWatch: Yehuda on Merb DataMapper 3-in-1 tricks</title> 
+
+<meta name="generator" content="WordPress 2.6.2" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="http://desiremesh.com/wp-content/themes/business-blue-20/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://desiremesh.com/feed/" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://desiremesh.com/feed/rss/" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://desiremesh.com/feed/atom/" />
+<link rel="pingback" href="http://desiremesh.com/xmlrpc.php" />
+
+
+	<link rel='archives' title='November 2008' href='http://desiremesh.com/2008/11/' />
+	<link rel='archives' title='October 2008' href='http://desiremesh.com/2008/10/' />
+	<link rel='archives' title='September 2008' href='http://desiremesh.com/2008/09/' />
+	<link rel='archives' title='August 2008' href='http://desiremesh.com/2008/08/' />
+	<link rel='archives' title='July 2008' href='http://desiremesh.com/2008/07/' />
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://desiremesh.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://desiremesh.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 2.6.2" />
+
+</head>
+
+
+<div id="header">
+<div id="header-image"></div>
+<div id="title" >
+    <!-- <h1><a href="http://desiremesh.com/"></a></h1> -->
+
+
+</div>
+	
+	<div id="titleinfo">
+			<p></p>
+	</div>
+
+	
+</div>
+<div id="navigation">	
+
+<div id="menu">	
+
+	<ul>
+		<li><a href="http://desiremesh.com">Home</a></li>
+		<li class="page_item page-item-6"><a href="http://desiremesh.com/about-2/" title="The Company">The Company</a></li>
+<li class="page_item page-item-113"><a href="http://desiremesh.com/the-team/" title="The Team">The Team</a></li>
+<li class="page_item page-item-9"><a href="http://desiremesh.com/contact/" title="Contact">Contact</a></li>
+ 
+	</ul>
+<div class="divrss"><a href="http://desiremesh.com/feed/" title=""><img src="http://desiremesh.com/wp-content/themes/business-blue-20/img/rss.png" alt="RSS" /></a></div>
+</div>
+
+
+</div>  <div id="container" class="clearfix">
+   <div id="leftnav">
+	  		<ul id="sidebarright">
+		<li id="meta" class="widget widget_meta">			<h2 class="widgettitle">More</h2>
+			<ul>
+						<li><a href="http://desiremesh.com/wp-login.php">Log in</a></li>
+			<li><a href="http://desiremesh.com/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://desiremesh.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+		</li>
+		<li id="recent-posts" class="widget widget_recent_entries">			<h2 class="widgettitle">Recent Posts</h2>
+			<ul>
+						<li><a href="http://desiremesh.com/2008/11/15/merbwatch-yehuda-on-merb-datamapper-3-in-1-tricks/">MerbWatch: Yehuda on Merb DataMapper 3-in-1 tricks </a></li>
+						<li><a href="http://desiremesh.com/2008/11/13/conversations-are-markets-spam-goes-down-by-66-when-mccolo-goes-down/">Conversations are Markets - Spam goes down by 66% when McColo goes down </a></li>
+						<li><a href="http://desiremesh.com/2008/11/12/htmlxml-wars-nokogiri-vs-hpricot/">HTML/XML Parser Wars: Nokogiri vs. Hpricot </a></li>
+						<li><a href="http://desiremesh.com/2008/11/11/a-desire-social-mesh-downunder-check-out-oursignalcom/">A Social Mesh Downunder: Check out OurSignal.com </a></li>
+						<li><a href="http://desiremesh.com/2008/11/11/merbwatch-yehuda-katz-and-matt-aimonetti-to-do-merb-training/">MerbWatch: Yehuda Katz and Matt Aimonetti to do Merb Training (!!!) </a></li>
+						</ul>
+		</li>
+</ul>
+    </div>
+    <div id="rightnav">
+	  <ul id="sidebarleft">
+	<li id="pages" class="widget widget_pages">		<h2 class="widgettitle">About DesireMesh</h2>
+		<ul>
+			<li class="page_item page-item-6"><a href="http://desiremesh.com/about-2/" title="The Company">The Company</a></li>
+<li class="page_item page-item-113"><a href="http://desiremesh.com/the-team/" title="The Team">The Team</a>
+<ul>
+	<li class="page_item page-item-119"><a href="http://desiremesh.com/the-team/kevin-leversee-co-founder-and-ceo/" title="Kevin Leversee">Kevin Leversee</a></li>
+	<li class="page_item page-item-124"><a href="http://desiremesh.com/the-team/jay-fajardo/" title="Jay Fajardo">Jay Fajardo</a></li>
+	<li class="page_item page-item-128"><a href="http://desiremesh.com/the-team/tony-abello/" title="Tony Abello">Tony Abello</a></li>
+	<li class="page_item page-item-146"><a href="http://desiremesh.com/the-team/paul-pajo/" title="Paul Pajo">Paul Pajo</a></li>
+</ul>
+</li>
+<li class="page_item page-item-9"><a href="http://desiremesh.com/contact/" title="Contact">Contact</a></li>
+		</ul>
+	</li>
+		</ul></div>
+    <div id="content">
+				
+  	
+			<div class="post" id="post-219">
+			<h3 class="posttitle"><a href="http://desiremesh.com/2008/11/15/merbwatch-yehuda-on-merb-datamapper-3-in-1-tricks/" rel="bookmark" title="Permanent Link: MerbWatch: Yehuda on Merb DataMapper 3-in-1 tricks">MerbWatch: Yehuda on Merb DataMapper 3-in-1 tricks</a></h3>
+	
+			<div class="entry">
+				<p>I&#8217;ll start re-posting stuff here that might be useful for all of you hacking Merb recently. You can as usual just head to the <a title="Subscribe to Merb Google Groups" href="http://groups.google.com/group/merb/subscribe?hl=en" target="_self">Merb Google Groups</a> if you want the complete thread.</p>
+<p><a href="mailto:gibblertron@gmail.com"><strong>Patrick a.k.a. pgib</strong></a> asks:</p>
+<blockquote><p>&#8220;I&#8217;m new to Merb (and Ruby) and unsure if the following is possible. I<br />
+have a model that has a Date field in it. I&#8217;d like my form to have<br />
+three select lists (month, day, year) instead of a text field for the<br />
+date entry, but I&#8217;m not sure of the best way of going about this.<br />
+Making the control itself isn&#8217;t such the thing I&#8217;m having trouble<br />
+with; it&#8217;s actually processing it to merge the three fields into one<br />
+value and setting the single Date field when the form submitted that<br />
+I&#8217;m not sure how to go about. I&#8217;d want to do this in a very reusable<br />
+way.</p>
+<p>Any direction would be greatly appreciated.<br />
+Thanks,</p>
+<p>Patrick&#8221;</p></blockquote>
+<p>After <a title="Yehuda Katz blog" href="http://yehudakatz.com/" target="_self">Yehuda Katz</a> asks Patrick for clarification if he uses ActiveRecord or DataMapper, Patrick confirms he&#8217;s using DataMapper and here&#8217;s <a title="Yehuda Katz blog" href="http://yehudakatz.com/" target="_self">Yehuda&#8217;s</a> answer:</p>
+<blockquote><p>&#8220;DataMapper supports converting Hash values directly into Date objects. So<br />
+you&#8217;ll need to name your properties:</p>
+<p><strong><code>model[date_prop][year]<br />
+model[date_prop][month]<br />
+model[date_prop][day]</code></strong></p>
+<p>which will come into your action as<br />
+<strong><code>{:model =&gt; {:date_prop =&gt; {:year =&gt; ...,:month =&gt; ..., :day =&gt; ...}}</code></strong></p>
+<p>and will work transparently.&#8221;</p></blockquote>
+<p>I hope that helps you Merb hackers out there trying the same thing that Patrick was working on!</p>
+<p>posted by Paul <a title="The Pageman in Multiply" href="http://pageman.multiply.com" target="_self">&#8220;The Pageman&#8221;</a> Pajo</p>
+	
+				</div>
+<h4>Related posts</h4>
+<ul><dl><a href="http://desiremesh.com/2008/11/09/merbwatch-merb-10-rc5-final-release-candidate-is-now-out/" rel="bookmark" title="Permanent Link: MerbWatch: Merb 1.0 RC5 (Final Release Candidate!) is now out">MerbWatch: Merb 1.0 RC5 (Final Release Candidate!) is now out</a></dl><i>...</i><dl><a href="http://desiremesh.com/2008/11/11/merbwatch-yehuda-katz-and-matt-aimonetti-to-do-merb-training/" rel="bookmark" title="Permanent Link: MerbWatch: Yehuda Katz and Matt Aimonetti to do Merb Training (!!!)">MerbWatch: Yehuda Katz and Matt Aimonetti to do Merb Training (!!!)</a></dl><i>...</i><dl><a href="http://desiremesh.com/2008/11/03/merbwatch-mark-watson-on-merb-filtered-ruby-news-merb-app/" rel="bookmark" title="Permanent Link: MerbWatch: Mark Watson on Merb + Filtered Ruby News Merb App">MerbWatch: Mark Watson on Merb + Filtered Ruby News Merb App</a></dl><i>...</i><dl><a href="http://desiremesh.com/2008/10/31/merbwatch-merb-10-rc4-is-already-out/" rel="bookmark" title="Permanent Link: MerbWatch: Merb 1.0 RC4 is already out">MerbWatch: Merb 1.0 RC4 is already out</a></dl><i>...</i><dl><a href="http://desiremesh.com/2008/11/05/merbwatch-check-out-pmpknpi-a-restful-blog-api-written-in-merb/" rel="bookmark" title="Permanent Link: MerbWatch: Check out PMPKNPI - a RESTful Blog API written in Merb">MerbWatch: Check out PMPKNPI - a RESTful Blog API written in Merb</a></dl><i>...</i></ul>
+</div>
+				<p class="postmetadata2">
+					<small>
+						This entry was posted
+						
+						on Saturday, November 15th, 2008 at 10:56 pm						and is filed under <a href="http://desiremesh.com/category/merb/" title="View all posts in Merb" rel="category tag">Merb</a>,  <a href="http://desiremesh.com/category/merbwatch/" title="View all posts in MerbWatch" rel="category tag">MerbWatch</a>.
+						You can follow any responses to this entry through the <a href='http://desiremesh.com/2008/11/15/merbwatch-yehuda-on-merb-datamapper-3-in-1-tricks/feed/'>RSS 2.0</a> feed. 
+						
+													You can <a href="#respond">leave a response</a>, or <a href="http://desiremesh.com/2008/11/15/merbwatch-yehuda-on-merb-datamapper-3-in-1-tricks/trackback/" rel="trackback">trackback</a> from your own site.
+						
+												
+					</small>
+				</p>
+			<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://desiremesh.com/2008/11/13/conversations-are-markets-spam-goes-down-by-66-when-mccolo-goes-down/">Conversations are Markets - Spam goes down by 66% when McColo goes down</a></div>
+			<div class="alignright"></div>
+		</div>
+	<div class="post">
+		
+	
+<!-- You can start editing here. -->
+
+
+   
+		<!-- If comments are open, but there are no comments. -->
+		
+	 
+
+
+<h4 id="respond">Leave a Reply</h4>
+
+<p>You must be <a href="http://desiremesh.com/wp-login.php?redirect_to=http://desiremesh.com/2008/11/15/merbwatch-yehuda-on-merb-datamapper-3-in-1-tricks/">logged in</a> to post a comment.</p>
+
+	
+		
+    </div>
+	
+    </div>
+
+	<div id="footwrap">
+
+Copyright © 2008 DesireMesh<br />
+</div>
+<!--Page footer ends-->
+</body>
+</html>  </div>
+</body>
+</html>
